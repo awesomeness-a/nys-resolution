@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> 
+        </script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="sweetalert2.all.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+        <!--------------Import Google fonts--------------------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anaheim&display=swap" rel="stylesheet"> 
+    </head>
+  
+    <!------------------Form Area---------------------------------->
+    <body>
+        <form id="survey-form" method="POST" action="https://script.google.com/macros/s/AKfycbxrEzPB8viD9R24oeci4ydLe0zbk_lr0slCF14AFR-hAklkJZZ35XsLhGBskvSHuH0x1Q/exec">
+            <h1 id="title"><strong>Resolution Reality Checklist</strong></h1>
+            <p id="description">Here’s the hard truth about life that people don’t want to embrace: <em>Identity drives behavior</em>. If you think it’s okay to give up on your New Year’s resolutions, you will.
+            The good news is you can change your identity at any moment. This guide will help you gut-check your New Year’s resolution to ensure you crush it this year.</p>
+      
+            <!--------------Personal Details------------------------------->
+            <fieldset>
+                <legend>Personal Details</legend>
+                <p id="description">Let's get to know each other 👋</p>
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" required id="name" name="name" placeholder="Enter your name here">
+                </div>
+                <div class="form-group">
+                    <label id="email" for="email">Email</label>
+                    <input type="text" required id="email" name="email" placeholder="Enter your email here">
+                </div>
+                <div class="form-group">
+                    <label id="date-label" for="date">Date</label>
+                    <input type="date" required id="date" name="date">
+                </div>
+  
+                <!-------------Dropdown menu---------------------------------->
+                <div class="form-group">
+                    <p><label for="role">Which option best describes your current role?</label>
+                    <select id="dropdown" rejuired name="role" class="form-control">
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="entrepreneur">Entrepreneur</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="no">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select></p>
+            </fieldset>
+        
+            <!---------------Part I. Identity------------------------------>
+            <fieldset>
+                <legend>Part I. Identity</legend>
+                <div class="form-group">
+                    <p id="description">To stick with your New Year’s resolution, you first need an identity and self-narrative that is primed for success.</p>
+                    <p><strong>Repeat and check the following:</strong></p>
+                    <input type="checkbox" id="checkbox" name="student" value="student"> I am an eternal student.<br>
+                    <input type="checkbox" name="work" value="work"> I am willing to work hard to achieve my goals.<br>
+                    <input type="checkbox" name="start" value="start"> I am careful about what I start, but what I start I finish.<br>
+                </div>
+                <div class="form-group">
+                    <p id="description"><strong>Write three more statements that reinforce the type of person you will be in 2023.</strong></p>
+                    <label for="type1">I am the type of person that</label>
+                    <input type="text" id="microgoal" name="type1"><br>
+                    <label for="type2">I am the type of person that</label>
+                    <input type="text" id="microgoal" name="type2"><br>
+                    <label for="type3">I am the type of person that</label>
+                    <input type="text" id="microgoal" name="type3">
+                </div>
+            </fieldset>
+    
+            <!----------Part II. Resolve------------------------------->
+            <fieldset>
+                <legend>Part II. Resolve</legend>
+                <p id="description">Strong resolutions must be two things: wildly exciting and deadly specific.</p>
+                <div class="form-group">
+                    <p><strong>Write your New Year’s resolution</strong></p>
+                    <textarea id="resolution" name="resolution" rows="4" cols="50" placeholder="Write your awesome resolution here"></textarea>   
+                </div>
+                <div class="form-group">
+                    <p><label for="excited"><strong>Does it get you excited?</strong> (Be honest.)</label>
+                    <input type="radio" name="excited" value="yes">Yes
+                    <input type="radio" name="excited" value="no">No</p>
+                </div>
+                <div class="form-group">
+                    <p>If no, re-write your resolution so that you will jump out of bed early every morning to attack it.<br>
+                    <em>Example: To get so fit that I have six-pack abs like Hugh Jackman!</em></p>
+                    <textarea id="rewrite" name="rewrite" rows="4" cols="50" placeholder="Re-write your awesome resolution here"></textarea>
+                </div>
+                <div class="form-group">
+                    <p>Nothing is worse than a vague New Year’s Resolution. If your goals are not specific, you won’t achieve them.<br>
+                    <p><label for="specific"><strong>Is your New Year’s resolution deadly specific?</strong></label>
+                    <input type="radio" name="specific" value="yes">Yes
+                    <input type="radio" name="specific" value="no">No</p>
+                </div>
+                    <div class="form-group">
+                    <p>If no, re-write your resolution here.</p>
+                    <textarea id="rewrite" name="rewrite" rows="4" cols="50" placeholder="Re-write your awesome resolution here"></textarea>   
+                </div>
+            </fieldset>
+    
+            <!---------------Part III. Credibility--------------------------->
+            <fieldset>
+                <legend>Part III. Credibility</legend>
+                <div class="form-group">
+                    <p id="description">Create micro goals to help you build momentum toward your resolution and earn credibility with yourself. Micro goals are meaningful goals that are easy to hit.</p>
+                    <p><strong>Create your micro goals</strong></p>
+                    <label for="goal1">Micro Goal #1</label>
+                    <input type="text" id="microgoal" name="goal1"><br>
+                    <label for="goal2">Micro Goal #2</label>
+                    <input type="text" id="microgoal" name="goal2"><br>
+                    <label for="goal3">Micro Goal #3</label>
+                    <input type="text" id="microgoal" name="goal3">
+                </div>
+                <div class=<form-group>
+                    <p><strong>New Year’s Resolution Success Metrics</strong></p>
+                    <p>Only data will tell you whether or not you are on the path to success. Determine the metrics you will follow throughout the year as your guide.</p>
+                    <p><strong>End of Year</strong></p>
+                    <label for="metric1">#1</label>
+                    <input type="text" id="microgoal" name="metric1"><br>
+                    <label for="metric2">#2</label>
+                    <input type="text" id="microgoal" name="metric2"><br>
+                    <label for="metric3">#3</label>
+                    <input type="text" id="microgoal" name="metric3">
+                </div>
+                <!-----------------Monthly-------------------------------
+                    <div class="form-group">
+                        <p><strong>Each month</strong></p>
+                        <table>
+                            <tr>
+                                <th>January</th>
+                                <th>February</th>
+                                <th>March</th>
+                                <th>April</th>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <th>May</th>
+                                <th>June</th>
+                                <th>July</th>
+                                <th>August</th>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <th>September</th>
+                                <th>October</th>
+                                <th>November</th>
+                                <th>December</th>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                        </table>
+                    </div>
+                ------------------------------------->
+            </fieldset>
+  
+            <!-----------Finals---------------------------->
+            <fieldset>
+                <legend>2023 Resolution Reality</legend>
+                <p id="description">Now that you have given your New Year’s resolution a reality check and built a strong identity to support it, complete the empowering narrative below.</p>
+                <div class="form-group">
+                    <label for="final">My New Year's Resolution is </label>
+                    <input type="text" id="res" name="final">.<br>
+                    <label for="belief">I am going to crush this resolution because I am the type of person that (self-belief) 
+                    <input type="text" id="res" name="belief">.<br>
+                    <label for="microgoal">I can’t wait to jump out of bed early every morning and start attacking my goals brick by brick and the first step is going to be (micro goal) </label>
+                    <input type="text" id="res" name="microgoal">.<br>
+                    <label for="completed">Once I reach (success metric) </label>
+                    <input type="text" id="res" name="completed">, I’ll know I’ve completed my New Year’s Resolution, and only then will I begin planning my 2024 resolution.
+                </div>
+            </fieldset>
+            
+            <div id="form-group">
+                <p>Well done! 💪 Send us your resolution, so we could cheer for you!</p>
+                <button type="submit" id="submit">Send my resolution</button> 
+            </div>
+        </form>
+        
+        <footer>
+            <p>Created by <a href="https://github.com/awesomeness-a"><strong>alina a.</strong></a></p>
+        </footer>
+    </body>
+</html>

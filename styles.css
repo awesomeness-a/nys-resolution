@@ -1,0 +1,105 @@
+body {
+    background-color: #2336AF;
+    font-family: Anaheim, monospace; 
+    font-size: 1.2rem;
+    color: #202B31;
+    line-height: 1.5;
+}
+  
+div + div {
+    margin-top: 1em;
+}
+  
+fieldset {
+    border: 1px solid lightgray;
+    margin: 15px;
+}
+  
+h1 {
+    color: #2336AF;
+}
+  
+legend {
+    font-weight: 700;
+    color: #2336AF;
+}
+  
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+  
+#microgoal, #res {
+    width: 400px;
+}
+  
+#survey-form {
+    background-color: #FCF1F2;
+    padding: 15px 1.5em 25px 1.5em;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 0.5em;
+}
+  
+button {
+    font-family: Anaheim, monospace;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    background-color: #2336AF;
+    color: #FCF1F2;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 2px;
+}
+  
+#submit {
+    display: flex; 
+    justify-content: center;
+}
+  
+#submit:hover {
+    background-color: #6676E1;
+}
+  
+.sweet-alert button:hover {
+    background-color: #6676E1;
+    font-family: Anaheim, monospace;
+    font-size: 1.2rem;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 2px;
+}
+  
+#table-container {
+    display: grid;
+    max-width: 70vw;
+}
+  
+footer {
+    color: #F1BCC0;
+    font-size: 0.8em;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+  
+a {
+    color: #F1BCC0;
+}
+  
+@media only screen and (min-width:180px) and (max-width:679px) {
+    body {
+        font-size: 1.3em;
+    }
+    #survey-form {
+        width: 70%;
+    }
+    fieldset {
+        width: 70%;
+        margin: 10px;
+    }
+    input {
+        width: 50%;
+    }
+}
