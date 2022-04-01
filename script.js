@@ -31,7 +31,7 @@ window.addEventListener("load", function() {
                 title: 'Well done!',
                 text: 'Now, how about executing on your awesome resolution? 🤗',
                 color: '#202B31',
-                imageUrl: 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/c5e8f786786515.5da497764d5e2.jpg',
+                imageUrl: 'rocket.jpg',
                 imageWidth: 300,
                 imageHeight: 'auto',
                 imageAlt: 'Rocket on the way',
